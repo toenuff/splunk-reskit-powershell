@@ -54,7 +54,7 @@ function Connect-Splunk
 	<# .ExternalHelp ../Splunk-Help.xml #>
     [Cmdletbinding(SupportsShouldProcess=$true,ConfirmImpact='None',DefaultParameterSetName="byCredentials")]
     Param(
-        [Parameter(Mandatory=$true, ValueFromPipelineByPropertyName=$true)]
+        [Parameter(Mandatory=$true, ValueFromPipelineByPropertyName=$true, Position=0)]
         [String]$ComputerName,
         
         [Parameter(ValueFromPipelineByPropertyName=$true)]
